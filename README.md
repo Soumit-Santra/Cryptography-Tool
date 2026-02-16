@@ -121,7 +121,7 @@ This tool is designed to help students, researchers, and security professionals 
 
 ```bash
 # Clone or download the repository
-git clone [repository-url]
+git clone https://github.com/Soumit-Santra/Cryptography-Tool
 cd cryptography-tool
 
 # Install dependencies (optional - auto-installs on run)
