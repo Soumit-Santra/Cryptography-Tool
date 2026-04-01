@@ -6,7 +6,7 @@
 ![Security](https://img.shields.io/badge/Security-Research%20Only-red)
 
 **Created by Soumit Santra — Educational Cryptography & Cryptanalysis Tool**  
-© 2025 [Soumit Santra]. All rights reserved.
+© 2026 [Soumit Santra]. All rights reserved.
 
 ---
 
