@@ -1,0 +1,6 @@
+pycryptodome
+cryptography
+requests
+colorama
+tqdm
+Pillow
