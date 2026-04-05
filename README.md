@@ -1,4 +1,4 @@
-# 🔐Cryptography Tool
+# 🔐 Cryptography Tool
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-green)
@@ -96,39 +96,96 @@ This tool is designed to help students, researchers, and security professionals 
 ## 🛠️ Requirements
 
 - Python **3.7+**
-- The script automatically installs required packages:
-  - `pycryptodome`
-  - `cryptography`
-  - `requests`
-  - `colorama`
-  - `tqdm`
-  - `Pillow` (PIL)
+- pip (Python package manager)
+
+### 📦 Dependencies (`requirements.txt`)
+
+```
+pycryptodome>=3.20.0
+cryptography>=42.0.0
+requests>=2.31.0
+colorama>=0.4.6
+tqdm>=4.66.0
+Pillow>=10.0.0
+```
+
+| Package | Version | Purpose |
+|---|---|---|
+| `pycryptodome` | ≥ 3.20.0 | AES, RSA, PKCS1_OAEP ciphers |
+| `cryptography` | ≥ 42.0.0 | Fernet, PBKDF2, ECC, ECDSA |
+| `requests` | ≥ 2.31.0 | PyPI version checking at startup |
+| `colorama` | ≥ 0.4.6 | Colored terminal output |
+| `tqdm` | ≥ 4.66.0 | Progress bars |
+| `Pillow` | ≥ 10.0.0 | Image steganography (PIL) |
+
+> **Note:** The script also auto-installs and auto-updates all dependencies on first run — no manual setup needed if you prefer that.
 
 ---
 
 ## 💻 Installation
 
-### Quick Start
+### ⚡ Quick Start (Auto-install)
 
-1. **Download the script**
-2. **Run with Python:**
-   ```bash
-   python crypto_tool.py
-   ```
-3. **Dependencies install automatically** on first run
-
-### Manual Installation
+Just run the script — it will automatically detect, install, and update all required packages:
 
 ```bash
-# Clone or download the repository
-git clone https://github.com/Soumit-Santra/Cryptography-Tool
-cd cryptography-tool
-
-# Install dependencies (optional - auto-installs on run)
-pip install pycryptodome cryptography requests colorama tqdm Pillow
-
-# Run the tool
 python crypto_tool.py
+```
+
+---
+
+### 📋 Install via `requirements.txt` (Recommended)
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Soumit-Santra/Cryptography-Tool
+cd Cryptography-Tool
+
+# 2. (Optional) Create a virtual environment
+python -m venv venv
+
+# Activate on Windows:
+venv\Scripts\activate
+
+# Activate on macOS/Linux:
+source venv/bin/activate
+
+# 3. Install all dependencies at once
+pip install -r requirements.txt
+
+# 4. Run the tool
+python crypto_tool.py
+```
+
+---
+
+### 🔄 Update Dependencies
+
+To update all packages to their latest versions:
+
+```bash
+pip install -r requirements.txt --upgrade
+```
+
+---
+
+### 🪟 Windows
+
+```bash
+python crypto_tool.py
+```
+
+Dependencies install automatically on first run.
+
+### 🍎 macOS / 🐧 Linux
+
+```bash
+python3 crypto_tool.py
+```
+
+If you encounter permission issues:
+```bash
+pip install -r requirements.txt --user
 ```
 
 ---
@@ -253,7 +310,7 @@ This tool helps users understand:
 
 If you discover vulnerabilities in the educational implementations:
 1. Do not exploit them maliciously
-2. Document the issue responsibly  
+2. Document the issue responsibly
 3. Use findings for educational purposes only
 4. Consider contributing improvements
 
