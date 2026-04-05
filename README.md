@@ -101,12 +101,12 @@ This tool is designed to help students, researchers, and security professionals 
 ### 📦 Dependencies (`requirements.txt`)
 
 ```
-pycryptodome>=3.20.0
-cryptography>=42.0.0
-requests>=2.31.0
-colorama>=0.4.6
-tqdm>=4.66.0
-Pillow>=10.0.0
+pycryptodome
+cryptography
+requests
+colorama
+tqdm
+Pillow
 ```
 
 | Package | Version | Purpose |
